@@ -1,0 +1,362 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+% \usepackage{pagecolor}
+% \usepackage{xcolor}
+% \definecolor{background}{HTML}{ECF3FB} 
+
+% \pagecolor{background}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kang}{Zong Xian}{
+\urlstyle{same}\href{https://kzxkangzongxian.web.app/}{\underline{Personal Website}} | \href{https://www.linkedin.com/in/kangzongxian/}{\underline{linkedin/kangzongxian}} | \href{https://github.com/kangzongxian}{\underline{github.com/kangzongxian}} | 
+\href{mailto:kangzongxian88@gmail.com}{\underline{kangzongxian88@gmail.com}} 
+% \href{mailto:kangzongxian88@gmail.com}{\underline{kangzongxian88@gmail.com}} 
+% | +65 9170 5541 (Take out since overseas)
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.30\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-5pt}
+\section{Education} 
+\subsection{National University \\of Singapore}
+\location{2021 - 2025}
+\descript{B.Sc. CS (Hons.) with a major in \\Computer Science CAP 4.67/5.0}
+\descript{Teaching Assistant for Data Structures and Algorithms, Software Engineering}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Java \textbullet{} JavaScript \textbullet{} TypeScript \textbullet{} C \\ 
+Python \textbullet{} C\# \textbullet{} C++ \\
+HTML/CSS \textbullet{} SQL \textbullet{} Dart \\
+\sectionsep
+
+\subsection{Frameworks}
+% Pandas \textbullet{} NumPy \textbullet{} TensorFlow \textbullet{} Keras\\
+% SciKit-Learn \textbullet{} Scrapy \textbullet{}
+React \textbullet{} Next.js \textbullet{} Redux \\
+.NET \textbullet{} Node.js \textbullet{} Flask \textbullet{} Flutter \\
+\sectionsep
+
+\subsection{Data}
+Kafka \textbullet{} Debezium \textbullet{} gRPC \\
+\sectionsep
+
+\subsection{Cloud / Databases}
+AWS (RDS, Lambda, ECS, S3, SQS, etc.)
+MongoDB \textbullet{} Firebase \textbullet{} Redis \\
+PostgreSQL \textbullet{} SQL Server \\
+\sectionsep
+
+\subsection{Tools}
+Pulumi \textbullet{} Kubernetes \textbullet{} Docker \\
+Git \textbullet{} Github \textbullet{} Bitbucket \textbullet{} Datadog \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+\textbullet{} Data Structures \& Algorithms \\
+\textbullet{} Software Engineering \\
+\textbullet{} Database Systems \\
+% \textbullet{} Linear Algebra \\
+\sectionsep
+
+\subsection{Online}
+% \textbullet{} \href{https://www.coursera.org/account/accomplishments/verify/SEA2KVK9MF92}{Introduction to Deep Learning \\by HSE University} \\
+% \textbullet{} \href{https://www.coursera.org/account/accomplishments/specialization/3NSVBJBQXYNQ}{NLP Specialization by DeepLearning.AI} \\
+\textbullet{} \href{https://courses.edx.org/certificates/6e98199f6a964dc086cffdd75cd0ed19}{CurtinX - Building An iOS App} \\
+\textbullet{} \href{https://courses.edx.org/certificates/373ce36c3b5440a7b5129a5313ee3cff}{CS50AI - Intro To AI With Python} \\
+\textbullet{} \href{https://www.udemy.com/certificate/UC-f07abd9f-1851-4a7f-8b24-98caecfc6a9f/}{React - The Complete Guide} \\
+\textbullet{} \href{https://www.udemy.com/certificate/UC-0fa46e71-aec6-4326-8993-a1f12360627a/}{Android Development Masterclass} \\
+% \textbullet{} \href{https://www.udemy.com/certificate/UC-99e0d682-cc7b-4db5-ac6b-7b911001e445/}{The Complete JavaScript Course} \\
+\textbullet{} \href{https://www.udemy.com/certificate/UC-ae998e6f-cf0a-47bf-b787-7b6e74f09dc7/}{The Complete Python Pro Bootcamp} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LEADERSHIP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership}
+
+\subsection{Vice Director}
+of Student Affairs at College of Alice and Peter Tan (CAPT)\\
+\textbullet{} Lead committee members to \\ organize activities for the college residents. \\
+% \textbullet{} In-charge of managing the growth \\ and development of members. \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards}
+% \textbf{2021} Wee Cho Yaw Future Leaders Award Recipient\\
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.69\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-5pt}
+\section{Work Experience}
+\runsubsection{Open Government Products}
+\descript{| Software Engineer Intern}
+\location{Aug 2024 - May 2025 | Singapore}
+\vspace{\topsep}
+\begin{tightemize}
+\item \textbf{Architected} and migrated letter notification delivery system from server-based processing to a \textbf{scalable queue-driven architecture using AWS SQS and ECS}, and \textbf{automated infrastructure deployments with Pulumi IaC}, reducing errors by \textbf{38\%}.
+\item Designed and implemented a \textbf{scalable} and \textbf{secure} system to transfer a \textbf{large} amount of letters \textbf{daily} using \textbf{CRON Job} and \textbf{AWS}, ensuring \textbf{reliability} and \textbf{error recovery}.
+\item Designed and implemented a \textbf{file sharing functionality} for government personnel, integrating \textbf{detailed audit logging for enhanced accountability.}
+\item \textbf{Developed, tested and maintained} features on \underline{\href{https://letters.gov.sg/}{LetterSG}}, \underline{\href{https://highway.gov.sg/}{Highway}} and \underline{\href{https://lens.open.gov.sg/}{Lens}}, improving user experience, \textbf{system functionality} while \textbf{handling incidents}.
+\item \textbf{Utilized}: TypeScript, React, PostgreSQL, AWS (RDS, S3, Lambda, etc.), Datadog, Git
+\end{tightemize}.
+\sectionsep
+\vspace{-10pt}
+
+\runsubsection{Google} 
+\descript{| Software Engineer Intern}
+\location{May 2024 - Aug 2024 | Singapore}
+\vspace{-2pt}
+\begin{tightemize}
+\item \textbf{Designed System Diagram and implemented} a new \textbf{scalable} form of engagement for rewarding vouchers in Google Pay, \textbf{improving user experience} and \textbf{engagement} of Google Pay vouchers.
+\item Implemented visual labels for claimed vouchers through \textbf{PubSub Messaging}, enhancing the \textbf{clarity and organization} of the voucher management system.
+\item Revamped parts of the codebase that has \textbf{frequent changes} to \textbf{leverage on CD Push rather than Binary Release}, improving \textbf{speed of configurability} by \textbf{8 times}.
+\item \textbf{Utilized}: Dart, Java, Flutter, gRPC, Pub Sub, Google Internal Tools
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Thales}
+\descript{| Software Engineer Intern}
+\location{Jan 2024 - Apr 2024 | Singapore}
+% \vspace{\topsep}
+\vspace{-2pt} % Remove vertical space (set to 0pt)
+\begin{tightemize}
+\item Implemented a \textbf{user facial data management system} into a mobile application.
+\item Implemented facial recognition on \textbf{Toradex Board built with TorizonOS} using \textbf{Cognitec's Facial Recognition SDK} to process metro users.
+% \item Implemented facial recognition on \textbf{Toradex Board built with TorizonOS} using \textbf{Cognitec's Facial Recognition SDK}, proving a scalable method to process metro users through facial recognition.
+% \item Implemented \textbf{logging mechanism} for facial data using \textbf{MongoDB} and \textbf{Flask}.
+\item \textbf{Utilized}: C++, TypeScript, React Native, Flask, MongoDB, Git, Gitlab
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Titansoft}
+\descript{| Software Engineer Intern}
+\location{May 2023 - Aug 2023 | Singapore}
+% \vspace{\topsep}
+\vspace{-2pt}
+\begin{tightemize}
+\item \textbf{Designed Architecture Diagram} to integrate caching for \textbf{SQL Server Database}.
+\item Implemented cache system using \textbf{Redis} and \textbf{SQL Change Tracking}, utilizing \textbf{Quartz} to \textbf{periodically update Redis cache based on SQL Table changes}.
+\item Implemented \textbf{alternative cache system} to \textbf{reduce rate of querying} SQL Server Database using \textbf{Redis}, \textbf{Kafka} and \textbf{Debezium}, reducing database load and latency.
+\item \textbf{Scaled} cache system using \textbf{Docker} and \textbf{Kubernetes}, achieving \textbf{more than 3 times the throughput} through \textbf{load testing} with \textbf{Grafana k6}.
+\item Developed cache system using \textbf{gRPC}, \textbf{.NET Framework} and \textbf{Test Driven Development} methodology, employing tools such as \textbf{NUnit} and \textbf{SpecFlow}.
+\item \textbf{Utilized}: C\#, SQL, Redis, Kafka, Debezium, Quartz, Docker, Kubernetes, Git
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Kabam Robotics}
+\descript{| Software Engineer Intern}
+\location{Dec 2022 - Mar 2023 | Singapore}
+\vspace{-2pt}
+\begin{tightemize}
+\item Added features to \textbf{React Application} Smart+ that communicates with live robots.
+\item \textbf{Implemented a Software Development Kit (SDK)} to help users monitor \textbf{robots' live locations} more efficiently, \textbf{reducing load time by 12\%}.
+% \item Improved application's \textbf{JSON Web Token (JWT) authorisation}, enabling users to have \textbf{persisted access}.
+% \item Improved application's \textbf{JWT authorisation}, enabling users' \textbf{persisted access}.
+% \item \textbf{Improved user experience} by implementing a generator to \textbf{generate robot task names dynamically} based on user inputs
+% \item Utilised \textbf{Docker} to load \textbf{Local Backend Server} to \textbf{test API Calls}
+% \item \textbf{Improved user experience} by implementing a generator to \textbf{generate robot task names dynamically} based on user inputs.
+\item \textbf{Utilized}: React.js, Redux, JavaScript, HTML, CSS, Bitbucket, Git
+\end{tightemize}
+\sectionsep
+
+% \section{Software Projects}
+
+% \runsubsection{ShopSaver}
+% \descript{| Android Shopping Application}
+% % \location{May 2022 - Aug 2022}
+% % \vspace{\topsep}
+% \begin{tightemize}
+% \item \underline{\href{https://github.com/Orbital-2022-ShopSaver}{ShopSaver}} is an \textbf{Android Application scraping online shopping platforms} for the \textbf{best prices of products} based on users' preferences, storing data in \textbf{Firestore}.
+% % \item Users can \textbf{add items to track} and get \textbf{latest updated prices} of items periodically.
+% % \item Implemented \textbf{Web Scraping API} using \textbf{Flask} and \textbf{BeautifulSoup}.
+% % \item \textbf{Github Link:} \href{https://github.com/Orbital-2022-ShopSaver}{https://github.com/Orbital-2022-ShopSaver}
+% \item \textbf{Utilized}: Java, Python, Flask, BeautifulSoup, Firebase, Android Studio, Git
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Vocal}
+% \descript{| Social Blogging Website}
+% \location{Apr 2023 - May 2023}
+% \begin{tightemize}
+% \item \textbf{React Application} where users can \textbf{sign up} and \textbf{create posts} for others to view.
+% % \item Users can login through \textbf{Firebase authentication}, \textbf{add a post} to the website, and view other users' posts, with the data stored in \textbf{Firebase Firestore}.
+% \item \textbf{Website Link:} \href{https://vocal-kangzongxian.vercel.app/}{https://vocal-kangzongxian.vercel.app/}
+% \item \textbf{Github Link:} \href{https://github.com/kangzongxian/vocal}{https://github.com/kangzongxian/vocal}
+% \item \textbf{Utilized}: React.js, Next.js, JavaScript, HTML, CSS, Firebase, Git
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{SelfJournal}
+% \descript{| Android Journal Application}
+% % \location{May 2022 - Jun 2022}
+% \begin{tightemize}
+% \item \textbf{Android Application} where users can key in their \textbf{thoughts throughout the day}.
+% \item The \textbf{data entered by the user is saved in Firebase} for the user to view.
+% \item \textbf{Github Link:} \href{https://github.com/kangzongxian/journalandroidapplication}{https://github.com/kangzongxian/journalandroidapplication}
+% % \item \textbf{Utilized}: SQL, Snowflake, Python, AWS.
+% \item \textbf{Utilized}: Java (Android Studio), Firebase (Database), and Git for Version Control.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOFTWARE PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Technical Certifications}
+
+% \runsubsection {React - The Complete Guide}
+% \descript{| React}
+% % \location{May 2020 – Aug 2020}
+% \begin{tightemize}
+% \item Building \textbf{Single-Page Applications with React.js}, Connecting to Databases with React and \textbf{Managing Application State with Redux}.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection {Android App Development Masterclass}
+% \descript{| Java, Android Studio}
+% % \location{May 2020 – Aug 2020}
+% \begin{tightemize}
+% \item Learnt about \textbf{Android App Development}, Android Activities and OOP in Java.
+% \item Utilized Android Apps with Databases such as \textbf{Firebase} and \textbf{MongoDB}
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection {Python Pro Bootcamp by Angela Yu}
+% \descript{| Python}
+% % \location{May 2020 – Aug 2020}
+% \begin{tightemize}
+% % \item In-depth knowledge taught regarding \textbf{Python} and \textbf{Web Scraping}.
+% \item Exposed to Web Development frameworks such as \textbf{Django} and \textbf{Flask}, as well as data analysation using \textbf{NumPy} and \textbf{Matplotlib}.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ADDITIONAL INFO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Additional Information}
+% \textbf{Language skills}:  English (Proficient), Indonesian (Native), Malay (Proficient).\\
+% \textbf{Interest}: Solo backpacking, Ultimate frisbee \\
+% \sectionsep
+
+\end{minipage} 
+\begin{minipage}[t]{\textwidth} % Specify the width of the minipage
+\vspace{-5pt}
+\section{Projects}
+\runsubsectionProjects{\underline{\href{https://kathakalai.com/}{KathakalAI}}: AI Project to recognise characters and expressions in Indian Dance Kathakali}
+\begin{itemize}
+\item{\fontsize{10}{12}\selectfont \textbf{Utilized}: TypeScript, Python, React.js, Node.js, Docker, AWS RDS, AWS S3, Microservices Architecture}
+\end{itemize}
+
+% \vspace{0pt} % Remove vertical space (set to 0pt)
+% \runsubsectionProjects{\underline{\href{https://github.com/Orbital-2022-ShopSaver}{ShopSaver}}: Android Shopping Application to Optimize Your Online Purchases}
+% \vspace{-5pt} % Adjust spacing immediately after the section heading
+% \begin{itemize}
+% \item{\fontsize{10}{12}\selectfont \textbf{Utilized}: Java, Python, Flask, BeautifulSoup, Firebase, Android Studio, Git}
+% \end{itemize}
+\vspace{0pt} % Remove vertical space (set to 0pt)
+\end{minipage}
+\end{document}  \documentclass[]{article}
